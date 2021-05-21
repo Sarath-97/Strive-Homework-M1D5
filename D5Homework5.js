@@ -39,12 +39,35 @@ It should return triple their absolute difference if the given number is greater
 */
 
 
+const crazyDiff = function(givenNum = 20, int1 = 19, int3 = 3, multiOfthree, differnece) {
+    
+    difference = givenNum - int1
+    console.log("The differnce of the given values:",difference)
+    if(givenNum > int1){
+        
+        multiOfthree  = difference * int3
+    }
+
+    console.log("Sum of previous values multiplied by 3:",multiOfthree)
+
+}
+
 crazyDiff()
 
 /* EXERCISE 4
 Write a function "boundary" which accept an integer n and returns true if n is within 20 and 100 (included) or if it's equal to 400.
 */
 
+const boundary = function(n = 50, num1 = 20, num2 = 100) {
+    
+    if(n >= num1 && n <= num2 || n === 400){
+        
+        console.log("this is true")
+    
+    }
+
+}   
+boundary()
 
 /* EXERCISE 5
 Write a function "strivify" which accepts a string.
